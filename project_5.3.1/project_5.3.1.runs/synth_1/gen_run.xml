@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557613528">
+  <File Type="PA-TCL" Name="display_BCD.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="display_BCD_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="display_BCD_reports.tcl"/>
+  <File Type="RDS-RDS" Name="display_BCD.vds"/>
+  <File Type="RDS-UTIL" Name="display_BCD_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="display_BCD_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="display_BCD.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="display_BCD_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="display_BCD_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/BCD_to_7seg.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sources/BCD_to_7seg.sv"/>
+        <Attr Name="ImportTime" Val="1557610173"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/fib_rec.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sources/fib_rec.sv"/>
+        <Attr Name="ImportTime" Val="1557610173"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/display_BCD.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sources/display_BCD.sv"/>
+        <Attr Name="ImportTime" Val="1557610176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="display_BCD"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constrs_5.3.1.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
