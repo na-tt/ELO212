@@ -18,9 +18,9 @@ module TDM(
    logic [6:0] CA_select; // estos son los 7seg actualmente seleccionados
    logic [7:0] AN_select; // enciende el anodo seleccionado y apaga los demas
    
-   clock_divider #(100000) divider(.clk_in(clk_in),.reset(reset),.clk_out(clk_int)); //divide 100mhz a 500 hz
+   clock_divider #(100000) divider(.clk_in(clk_in),.reset(1'b0),.clk_out(clk_int)); //divide 100mhz a 500 hz
    
-    nbit_counter #(3) counter(.clk(clk),.reset(reset),.count(count));  // contador de 0 a 7 para seleccionar los 7 segmentos y anodos.
+    nbit_counter #(3) counter(.clk(clk_int),.reset(reset),.count(count));  // contador de 0 a 7 para seleccionar los 7 segmentos y anodos.
     
     digit_selector selector(
         .CA7(CA7),.CA6(CA6),.CA5(CA5),.CA4(CA4),.CA3(CA3),.CA2(CA2),.CA1(CA1),.CA0(CA0),
