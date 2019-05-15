@@ -1,10 +1,12 @@
 `timescale 1ns / 1ps
 
-module ALU(
+module ALU #(
+    parameter n = 8
+    )
 
-    input logic [7:0] A,B,
+   ( input logic [n-1:0] A,B,
     input logic [3:0] opcode, // UP,DOWN,RIGHT,LEFT
-    output logic [7:0] result,
+    output logic [n-1:0] result,
     output logic [3:0]status 
     
     );

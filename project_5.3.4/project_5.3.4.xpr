@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/Natt/ELO212/project_5.3.4/project_5.3.4.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/Natt/Documents/GitHub/ELO212/project_5.3.4/project_5.3.4.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="4635db7fccb044d195c20283c7af8432"/>

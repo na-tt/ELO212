@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557932063">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557960142">
   <File Type="BITSTR-BMM" Name="Display_ALU_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="Display_ALU_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="Display_ALU_timing_summary_init.rpt"/>
