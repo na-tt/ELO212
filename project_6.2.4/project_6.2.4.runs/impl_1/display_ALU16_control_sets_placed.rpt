@@ -1,0 +1,81 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Jul 20 20:26:44 2019
+| Host         : DESKTOP-BUGDRN4 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file display_ALU16_control_sets_placed.rpt
+| Design       : display_ALU16
+| Device       : xc7a100t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    40 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      3 |            1 |
+|      4 |            6 |
+|     14 |            1 |
+|    16+ |            6 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              50 |           22 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              78 |           20 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              48 |           13 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------+----------------+-------------------------------+------------------+----------------+
+|        Clock Signal        |  Enable Signal |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++----------------------------+----------------+-------------------------------+------------------+----------------+
+|  tdm/divider/clk_out_reg_0 |                |                               |                1 |              3 |
+|  CLK100MHZ_IBUF_BUFG       |                |                               |                3 |              4 |
+|  clk_BUFG                  |                | debCenter/PB_IDLE             |                1 |              4 |
+|  clk_BUFG                  |                | debDown/PB_IDLE               |                1 |              4 |
+|  clk_BUFG                  |                | debLeft/PB_IDLE               |                1 |              4 |
+|  clk_BUFG                  |                | debRight/PB_IDLE              |                2 |              4 |
+|  clk_BUFG                  |                | debUp/PB_IDLE                 |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG       |                | clk100/clk_out                |                4 |             14 |
+|  CLK100MHZ_IBUF_BUFG       |                | tdm/divider/clk_out           |                4 |             16 |
+|  clk_BUFG                  | debCenter/E[0] | debDown/SR[0]                 |                4 |             16 |
+|  clk_BUFG                  | debLeft/E[0]   | debDown/SR[0]                 |                4 |             16 |
+|  clk_BUFG                  | debRight/E[0]  | debDown/SR[0]                 |                5 |             16 |
+|  clk_BUFG                  |                | debUp/PB_pressed_status_reg_0 |                6 |             28 |
+|  clk_BUFG                  |                |                               |               18 |             43 |
++----------------------------+----------------+-------------------------------+------------------+----------------+
+
+

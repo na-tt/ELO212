@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../project_6.2.3.srcs/sources_1/imports/Sources/clock_divider.sv" \
+"../../../../project_6.2.3.srcs/sources_1/imports/Sources/digit_selector.sv" \
+"../../../../project_6.2.3.srcs/sources_1/imports/Sources/nbit_counter.sv" \
+"../../../../project_6.2.3.srcs/sources_1/imports/Sources/TDM.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

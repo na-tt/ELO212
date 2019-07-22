@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.3/project_6.2.3.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.3/project_6.2.3.srcs/sources_1/imports/Sources/TDM.sv,1557926767,systemVerilog,,,,TDM,,,,,,,,
+C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.3/project_6.2.3.srcs/sources_1/imports/Sources/clock_divider.sv,1557610178,systemVerilog,,C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.3/project_6.2.3.srcs/sources_1/imports/Sources/digit_selector.sv,,clock_divider,,,,,,,,
+C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.3/project_6.2.3.srcs/sources_1/imports/Sources/digit_selector.sv,1557611458,systemVerilog,,C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.3/project_6.2.3.srcs/sources_1/imports/Sources/nbit_counter.sv,,digit_selector,,,,,,,,
+C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.3/project_6.2.3.srcs/sources_1/imports/Sources/nbit_counter.sv,1557610178,systemVerilog,,C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.3/project_6.2.3.srcs/sources_1/imports/Sources/TDM.sv,,nbit_counter,,,,,,,,
+C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.3/project_6.2.3.srcs/sources_1/imports/Sources/reg_bank.sv,1558307616,systemVerilog,,C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.3/project_6.2.3.srcs/sources_1/new/n_retentor2.sv,,reg_bank,,,,,,,,
+C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.3/project_6.2.3.srcs/sources_1/new/n_retentor2.sv,1563656119,systemVerilog,,,,n_retentor2,,,,,,,,
