@@ -1,0 +1,1057 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jul 24 15:46:34 2019
+# Process ID: 7372
+# Current directory: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7924 C:\Users\Natt\Documents\GitHub\ELO212\project_6.2.5\project_6.2.5.xpr
+# Log file: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/vivado.log
+# Journal file: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/na-tt/Documents/ELO212/project_6.2.5' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 666.203 ; gain = 104.160
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'basic_calc_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj basic_calc_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Natt/Documents/GitHub/ELO212/Sources/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/basic_calc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module basic_calc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/calc_control_FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_FSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_bank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sim_1/new/basic_calc_testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module basic_calc_testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1ebdc358566342ce82831be214510cb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot basic_calc_testbench_behav xil_defaultlib.basic_calc_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'leds' on this module [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sim_1/new/basic_calc_testbench.sv:8]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 672.148 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'basic_calc_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj basic_calc_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Natt/Documents/GitHub/ELO212/Sources/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/basic_calc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module basic_calc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/calc_control_FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_FSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_bank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sim_1/new/basic_calc_testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module basic_calc_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1ebdc358566342ce82831be214510cb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot basic_calc_testbench_behav xil_defaultlib.basic_calc_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.calc_control_FSM
+Compiling module xil_defaultlib.reg_bank(n=16)
+Compiling module xil_defaultlib.reg_bank(n=2)
+Compiling module xil_defaultlib.ALU(n=16)
+Compiling module xil_defaultlib.basic_calc
+Compiling module xil_defaultlib.basic_calc_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot basic_calc_testbench_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim/xsim.dir/basic_calc_testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim/xsim.dir/basic_calc_testbench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jul 24 15:53:31 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Jul 24 15:53:31 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 706.555 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "basic_calc_testbench_behav -key {Behavioral:sim_1:Functional:basic_calc_testbench} -tclbatch {basic_calc_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source basic_calc_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'basic_calc_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 710.422 ; gain = 3.867
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 785.531 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'basic_calc_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj basic_calc_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Natt/Documents/GitHub/ELO212/Sources/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/basic_calc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module basic_calc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/calc_control_FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_FSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_bank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sim_1/new/basic_calc_testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module basic_calc_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1ebdc358566342ce82831be214510cb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot basic_calc_testbench_behav xil_defaultlib.basic_calc_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.calc_control_FSM
+Compiling module xil_defaultlib.reg_bank(n=16)
+Compiling module xil_defaultlib.reg_bank(n=2)
+Compiling module xil_defaultlib.ALU(n=16)
+Compiling module xil_defaultlib.basic_calc
+Compiling module xil_defaultlib.basic_calc_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot basic_calc_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "basic_calc_testbench_behav -key {Behavioral:sim_1:Functional:basic_calc_testbench} -tclbatch {basic_calc_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source basic_calc_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'basic_calc_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 785.531 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: display_basic_calc
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 863.844 ; gain = 43.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'display_basic_calc' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/display_basic_calc.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+	Parameter COUNTER_MAX bound to: 20000 - type: integer 
+	Parameter DELAY_WIDTH bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'PB_Debouncer_counter' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/debouncer_counter.sv:1]
+	Parameter DELAY bound to: 15 - type: integer 
+	Parameter DELAY_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PB_Debouncer_counter' (2#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/debouncer_counter.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'basic_calc' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/basic_calc.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'calc_control_FSM' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/calc_control_FSM.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'calc_control_FSM' (3#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/calc_control_FSM.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_bank' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank' (4#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_bank__parameterized0' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+	Parameter n bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank__parameterized0' (4#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/ALU.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/ALU.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'basic_calc' (6#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/basic_calc.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'BCD_to_sevenSeg' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'BCD_to_sevenSeg' (7#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'TDM' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/TDM.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized0' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+	Parameter COUNTER_MAX bound to: 100000 - type: integer 
+	Parameter DELAY_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized0' (7#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'nbit_counter' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/nbit_counter.sv:3]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'nbit_counter' (8#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/nbit_counter.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'digit_selector' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'digit_selector' (9#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'TDM' (10#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/TDM.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'display_basic_calc' (11#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/display_basic_calc.sv:3]
+WARNING: [Synth 8-3917] design display_basic_calc has port DP driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 904.816 ; gain = 84.129
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 904.816 ; gain = 84.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 904.816 ; gain = 84.129
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+Finished Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1255.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1280.914 ; gain = 460.227
+34 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1285.828 ; gain = 465.141
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Jul 24 16:31:54 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/synth_1/runme.log
+[Wed Jul 24 16:31:54 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FD95A
+set_property PROGRAM.FILE {C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/display_basic_calc.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/display_basic_calc.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Jul 24 17:08:21 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/synth_1/runme.log
+[Wed Jul 24 17:08:21 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/display_basic_calc.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Jul 24 17:26:04 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/synth_1/runme.log
+[Wed Jul 24 17:26:04 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FD95A
+set_property PROGRAM.FILE {C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/display_basic_calc.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/display_basic_calc.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Jul 24 17:42:50 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/synth_1/runme.log
+[Wed Jul 24 17:42:50 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/display_basic_calc.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A3FD95A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FD95A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2293.277 ; gain = 28.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'display_basic_calc' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/display_basic_calc.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+	Parameter COUNTER_MAX bound to: 500000 - type: integer 
+	Parameter DELAY_WIDTH bound to: 19 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'PB_Debouncer_counter' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/debouncer_counter.sv:1]
+	Parameter DELAY bound to: 15 - type: integer 
+	Parameter DELAY_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PB_Debouncer_counter' (2#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/debouncer_counter.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'basic_calc' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/basic_calc.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'calc_control_FSM' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/calc_control_FSM.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'calc_control_FSM' (3#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/calc_control_FSM.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_bank' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank' (4#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_bank__parameterized0' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+	Parameter n bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank__parameterized0' (4#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/ALU.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/ALU.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'basic_calc' (6#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/basic_calc.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'BCD_to_sevenSeg' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'BCD_to_sevenSeg' (7#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'TDM' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/TDM.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized0' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+	Parameter COUNTER_MAX bound to: 100000 - type: integer 
+	Parameter DELAY_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized0' (7#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'nbit_counter' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/nbit_counter.sv:3]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'nbit_counter' (8#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/nbit_counter.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'digit_selector' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'digit_selector' (9#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'TDM' (10#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/TDM.sv:3]
+WARNING: [Synth 8-3848] Net JA4 in module/entity display_basic_calc does not have driver. [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/display_basic_calc.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'display_basic_calc' (11#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/display_basic_calc.sv:3]
+WARNING: [Synth 8-3917] design display_basic_calc has port DP driven by constant 1
+WARNING: [Synth 8-3331] design display_basic_calc has unconnected port JA4
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2318.891 ; gain = 54.180
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2318.891 ; gain = 54.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2318.891 ; gain = 54.180
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+WARNING: [Vivado 12-584] No ports matched 'JA9'. [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2486.008 ; gain = 221.297
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'basic_calc_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj basic_calc_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1ebdc358566342ce82831be214510cb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot basic_calc_testbench_behav xil_defaultlib.basic_calc_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "basic_calc_testbench_behav -key {Behavioral:sim_1:Functional:basic_calc_testbench} -tclbatch {basic_calc_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source basic_calc_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'basic_calc_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 2535.734 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Jul 24 20:01:53 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/synth_1/runme.log
+[Wed Jul 24 20:01:53 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/display_basic_calc.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Jul 24 20:15:03 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/synth_1/runme.log
+[Wed Jul 24 20:15:03 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/display_basic_calc.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2535.734 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'display_basic_calc' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/display_basic_calc.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+	Parameter COUNTER_MAX bound to: 5000 - type: integer 
+	Parameter DELAY_WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'PB_Debouncer_counter' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/debouncer_counter.sv:1]
+	Parameter DELAY bound to: 15 - type: integer 
+	Parameter DELAY_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PB_Debouncer_counter' (2#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/debouncer_counter.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'basic_calc' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/basic_calc.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'calc_control_FSM' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/calc_control_FSM.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'calc_control_FSM' (3#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/calc_control_FSM.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_bank' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank' (4#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_bank__parameterized0' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+	Parameter n bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank__parameterized0' (4#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/ALU.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/ALU.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'basic_calc' (6#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/basic_calc.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'BCD_to_sevenSeg' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'BCD_to_sevenSeg' (7#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'TDM' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/TDM.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized0' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+	Parameter COUNTER_MAX bound to: 100000 - type: integer 
+	Parameter DELAY_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized0' (7#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'nbit_counter' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/nbit_counter.sv:3]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'nbit_counter' (8#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/nbit_counter.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'digit_selector' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'digit_selector' (9#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'TDM' (10#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/TDM.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'display_basic_calc' (11#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/display_basic_calc.sv:3]
+WARNING: [Synth 8-3917] design display_basic_calc has port DP driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2535.734 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2535.734 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2535.734 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+WARNING: [Vivado 12-584] No ports matched 'JA4'. [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2535.734 ; gain = 0.000
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A3FD95A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FD95A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Jul 24 21:38:23 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Jul 24 21:43:17 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/synth_1/runme.log
+[Wed Jul 24 21:43:17 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2667.664 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'display_basic_calc' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/display_basic_calc.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+	Parameter COUNTER_MAX bound to: 5000 - type: integer 
+	Parameter DELAY_WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'PB_Debouncer_counter' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/debouncer_counter.sv:1]
+	Parameter DELAY bound to: 15 - type: integer 
+	Parameter DELAY_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PB_Debouncer_counter' (2#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/debouncer_counter.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'basic_calc' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/basic_calc.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'calc_control_FSM' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/calc_control_FSM.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'calc_control_FSM' (3#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/calc_control_FSM.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_bank' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank' (4#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_bank__parameterized0' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+	Parameter n bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank__parameterized0' (4#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/ALU.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/ALU.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'basic_calc' (6#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/basic_calc.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'BCD_to_sevenSeg' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'BCD_to_sevenSeg' (7#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'TDM' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/TDM.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized0' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+	Parameter COUNTER_MAX bound to: 100000 - type: integer 
+	Parameter DELAY_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized0' (7#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'nbit_counter' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/nbit_counter.sv:3]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'nbit_counter' (8#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/nbit_counter.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'digit_selector' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'digit_selector' (9#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'TDM' (10#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/TDM.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'display_basic_calc' (11#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/display_basic_calc.sv:3]
+WARNING: [Synth 8-3917] design display_basic_calc has port DP driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2667.664 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2667.664 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2667.664 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+WARNING: [Vivado 12-584] No ports matched 'JA4'. [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2667.664 ; gain = 0.000
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+WARNING: [Vivado 12-584] No ports matched 'JA4'. [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+Finished Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Jul 24 21:53:17 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/synth_1/runme.log
+[Wed Jul 24 21:53:17 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/display_basic_calc.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+close_design
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3189.418 ; gain = 0.000
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: display_basic_calc
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3189.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'display_basic_calc' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/display_basic_calc.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+	Parameter COUNTER_MAX bound to: 5000 - type: integer 
+	Parameter DELAY_WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'PB_Debouncer_counter' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/debouncer_counter.sv:1]
+	Parameter DELAY bound to: 15 - type: integer 
+	Parameter DELAY_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PB_Debouncer_counter' (2#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/debouncer_counter.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'basic_calc' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/basic_calc.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'calc_control_FSM' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/calc_control_FSM.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'calc_control_FSM' (3#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/calc_control_FSM.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_bank' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank' (4#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_bank__parameterized0' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+	Parameter n bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank__parameterized0' (4#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/ALU.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/ALU.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'basic_calc' (6#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/basic_calc.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'BCD_to_sevenSeg' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'BCD_to_sevenSeg' (7#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'TDM' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/TDM.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized0' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+	Parameter COUNTER_MAX bound to: 100000 - type: integer 
+	Parameter DELAY_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized0' (7#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'nbit_counter' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/nbit_counter.sv:3]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'nbit_counter' (8#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/nbit_counter.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'digit_selector' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'digit_selector' (9#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'TDM' (10#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/TDM.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'display_basic_calc' (11#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/display_basic_calc.sv:3]
+WARNING: [Synth 8-3917] design display_basic_calc has port DP driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3189.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3189.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3189.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+Finished Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3189.418 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3189.418 ; gain = 0.000
+33 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3189.418 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'basic_calc_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj basic_calc_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1ebdc358566342ce82831be214510cb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot basic_calc_testbench_behav xil_defaultlib.basic_calc_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "basic_calc_testbench_behav -key {Behavioral:sim_1:Functional:basic_calc_testbench} -tclbatch {basic_calc_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source basic_calc_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'basic_calc_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 3189.418 ; gain = 0.000
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Jul 24 21:59:34 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FD95A
+set_property PROGRAM.FILE {C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/display_basic_calc.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/display_basic_calc.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'basic_calc_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj basic_calc_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1ebdc358566342ce82831be214510cb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot basic_calc_testbench_behav xil_defaultlib.basic_calc_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "basic_calc_testbench_behav -key {Behavioral:sim_1:Functional:basic_calc_testbench} -tclbatch {basic_calc_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source basic_calc_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'basic_calc_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3189.418 ; gain = 0.000
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+Finished Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3362.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_design
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: display_basic_calc
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3362.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'display_basic_calc' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/display_basic_calc.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+	Parameter COUNTER_MAX bound to: 5000 - type: integer 
+	Parameter DELAY_WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'PB_Debouncer_counter' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/debouncer_counter.sv:1]
+	Parameter DELAY bound to: 15 - type: integer 
+	Parameter DELAY_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PB_Debouncer_counter' (2#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/debouncer_counter.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'basic_calc' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/basic_calc.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'calc_control_FSM' [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/calc_control_FSM.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'calc_control_FSM' (3#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/calc_control_FSM.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_bank' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank' (4#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_bank__parameterized0' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+	Parameter n bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank__parameterized0' (4#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/reg_bank.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/ALU.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/ALU.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'basic_calc' (6#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/basic_calc.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'BCD_to_sevenSeg' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'BCD_to_sevenSeg' (7#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/BCD_to_7seg.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'TDM' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/TDM.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized0' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+	Parameter COUNTER_MAX bound to: 100000 - type: integer 
+	Parameter DELAY_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized0' (7#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/clock_divider.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'nbit_counter' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/nbit_counter.sv:3]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'nbit_counter' (8#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/nbit_counter.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'digit_selector' [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'digit_selector' (9#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/digit_selector.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'TDM' (10#1) [C:/Users/Natt/Documents/GitHub/ELO212/Sources/TDM.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'display_basic_calc' (11#1) [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/sources_1/new/display_basic_calc.sv:3]
+WARNING: [Synth 8-3917] design display_basic_calc has port DP driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3362.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3362.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3362.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+Finished Parsing XDC File [C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.srcs/constrs_1/new/constrs.6.2.5.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3362.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3362.316 ; gain = 0.000
+33 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3362.316 ; gain = 0.000
