@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1564108467">
-  <File Type="BITSTR-BMM" Name="debug_display_calc_FSM_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="debug_display_calc_FSM_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="debug_display_calc_FSM_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="debug_display_calc_FSM_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="debug_display_calc_FSM.tcl"/>
-  <File Type="OPT-TIMING" Name="debug_display_calc_FSM_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="debug_display_calc_FSM_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="debug_display_calc_FSM_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="debug_display_calc_FSM_reports.tcl"/>
-  <File Type="OPT-DRC" Name="debug_display_calc_FSM_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="debug_display_calc_FSM.hwdef"/>
-  <File Type="PWROPT-DCP" Name="debug_display_calc_FSM_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="debug_display_calc_FSM_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="debug_display_calc_FSM_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="debug_display_calc_FSM_placed.dcp"/>
-  <File Type="PLACE-IO" Name="debug_display_calc_FSM_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="debug_display_calc_FSM_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="debug_display_calc_FSM_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="debug_display_calc_FSM_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="debug_display_calc_FSM_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="debug_display_calc_FSM_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="debug_display_calc_FSM_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="debug_display_calc_FSM.bgn"/>
-  <File Type="PLACE-TIMING" Name="debug_display_calc_FSM_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="debug_display_calc_FSM_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="debug_display_calc_FSM.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="debug_display_calc_FSM_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="debug_display_calc_FSM_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="debug_display_calc_FSM_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="debug_display_calc_FSM.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="debug_display_calc_FSM_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="debug_display_calc_FSM_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="debug_display_calc_FSM_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="debug_display_calc_FSM_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="debug_display_calc_FSM_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="debug_display_calc_FSM_drc_routed.pb"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1564165673">
+  <File Type="BITSTR-BMM" Name="diplay_basic_calc_FSM_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="diplay_basic_calc_FSM_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="diplay_basic_calc_FSM_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="diplay_basic_calc_FSM_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="diplay_basic_calc_FSM.tcl"/>
+  <File Type="OPT-TIMING" Name="diplay_basic_calc_FSM_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="diplay_basic_calc_FSM_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="diplay_basic_calc_FSM_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="diplay_basic_calc_FSM_reports.tcl"/>
+  <File Type="OPT-DRC" Name="diplay_basic_calc_FSM_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="diplay_basic_calc_FSM.hwdef"/>
+  <File Type="PWROPT-DCP" Name="diplay_basic_calc_FSM_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="diplay_basic_calc_FSM_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="diplay_basic_calc_FSM_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="diplay_basic_calc_FSM_placed.dcp"/>
+  <File Type="PLACE-IO" Name="diplay_basic_calc_FSM_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="diplay_basic_calc_FSM_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="diplay_basic_calc_FSM_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="diplay_basic_calc_FSM_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="diplay_basic_calc_FSM_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="diplay_basic_calc_FSM_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="diplay_basic_calc_FSM_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="diplay_basic_calc_FSM.bgn"/>
+  <File Type="PLACE-TIMING" Name="diplay_basic_calc_FSM_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="diplay_basic_calc_FSM_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="diplay_basic_calc_FSM.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="diplay_basic_calc_FSM_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="diplay_basic_calc_FSM_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="diplay_basic_calc_FSM_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="diplay_basic_calc_FSM.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="diplay_basic_calc_FSM_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="diplay_basic_calc_FSM_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="diplay_basic_calc_FSM_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="diplay_basic_calc_FSM_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="diplay_basic_calc_FSM_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="diplay_basic_calc_FSM_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="debug_display_calc_FSM.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="debug_display_calc_FSM_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="debug_display_calc_FSM.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="debug_display_calc_FSM_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="debug_display_calc_FSM_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="debug_display_calc_FSM.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="debug_display_calc_FSM_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="debug_display_calc_FSM_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="debug_display_calc_FSM_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="debug_display_calc_FSM_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="debug_display_calc_FSM_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="debug_display_calc_FSM_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="debug_display_calc_FSM_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="debug_display_calc_FSM_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="debug_display_calc_FSM_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="debug_display_calc_FSM_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="debug_display_calc_FSM_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="debug_display_calc_FSM_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="debug_display_calc_FSM_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="debug_display_calc_FSM_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="debug_display_calc_FSM_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="debug_display_calc_FSM_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="debug_display_calc_FSM_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="debug_display_calc_FSM_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="debug_display_calc_FSM_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="debug_display_calc_FSM.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="debug_display_calc_FSM_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="debug_display_calc_FSM.rbt"/>
-  <File Type="BITSTR-NKY" Name="debug_display_calc_FSM.nky"/>
-  <File Type="BG-DRC" Name="debug_display_calc_FSM.drc"/>
-  <File Type="RDI-RDI" Name="debug_display_calc_FSM.vdi"/>
+  <File Type="BITSTR-LTX" Name="diplay_basic_calc_FSM.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="diplay_basic_calc_FSM_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="diplay_basic_calc_FSM.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="diplay_basic_calc_FSM_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="diplay_basic_calc_FSM_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="diplay_basic_calc_FSM.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="diplay_basic_calc_FSM_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="diplay_basic_calc_FSM_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="diplay_basic_calc_FSM_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="diplay_basic_calc_FSM_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="diplay_basic_calc_FSM_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="diplay_basic_calc_FSM_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="diplay_basic_calc_FSM_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="diplay_basic_calc_FSM_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="diplay_basic_calc_FSM_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="diplay_basic_calc_FSM_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="diplay_basic_calc_FSM_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="diplay_basic_calc_FSM_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="diplay_basic_calc_FSM_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="diplay_basic_calc_FSM_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="diplay_basic_calc_FSM_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="diplay_basic_calc_FSM_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="diplay_basic_calc_FSM_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="diplay_basic_calc_FSM_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="diplay_basic_calc_FSM_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="diplay_basic_calc_FSM.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="diplay_basic_calc_FSM_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="diplay_basic_calc_FSM.rbt"/>
+  <File Type="BITSTR-NKY" Name="diplay_basic_calc_FSM.nky"/>
+  <File Type="BG-DRC" Name="diplay_basic_calc_FSM.drc"/>
+  <File Type="RDI-RDI" Name="diplay_basic_calc_FSM.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -134,14 +134,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/debug_display_calc_FSM.sv">
+    <File Path="$PSRCDIR/sources_1/new/diplay_basic_calc_FSM.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/diplay_basic_calc_FSM.sv">
+    <File Path="$PSRCDIR/sources_1/new/debug_display_calc_FSM.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -151,7 +151,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="debug_display_calc_FSM"/>
+      <Option Name="TopModule" Val="diplay_basic_calc_FSM"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

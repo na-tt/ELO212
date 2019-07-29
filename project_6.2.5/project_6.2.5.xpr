@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/na-tt/Documents/ELO212/project_6.2.5/project_6.2.5.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="e0188dece7bd482abfa9254ea8b6fbf6"/>
@@ -122,14 +122,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/debug_display_calc_FSM.sv">
+      <File Path="$PSRCDIR/sources_1/new/diplay_basic_calc_FSM.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/diplay_basic_calc_FSM.sv">
+      <File Path="$PSRCDIR/sources_1/new/debug_display_calc_FSM.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -139,7 +139,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="debug_display_calc_FSM"/>
+        <Option Name="TopModule" Val="diplay_basic_calc_FSM"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

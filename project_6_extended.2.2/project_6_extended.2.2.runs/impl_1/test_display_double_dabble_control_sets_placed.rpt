@@ -1,0 +1,86 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Jul 28 16:56:52 2019
+| Host         : Jaime-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file test_display_double_dabble_control_sets_placed.rpt
+| Design       : test_display_double_dabble
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    19 |
+| Unused register locations in slices containing registers |    71 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      3 |            1 |
+|      4 |            6 |
+|      5 |            1 |
+|    16+ |           11 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              23 |           15 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             101 |           29 |
+| Yes          | No                    | No                     |              45 |           16 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              48 |           14 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+----------------------------+-------------------------------+------------------+----------------+
+|     Clock Signal     |        Enable Signal       |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++----------------------+----------------------------+-------------------------------+------------------+----------------+
+|  tdm/divider/clk     |                            |                               |                3 |              3 |
+|  CLK100MHZ_IBUF_BUFG | DD/r_Loop_Count[3]_i_1_n_0 |                               |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | DD/r_BCD[3]                |                               |                3 |              4 |
+|  CLK100MHZ_IBUF_BUFG | DD/r_BCD[7]                |                               |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG | DD/r_BCD[11]               |                               |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | DD/r_BCD[15]               |                               |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG | DD/r_BCD[19]               |                               |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG | DD/r_Digit_Index           |                               |                2 |              5 |
+|  CLK100MHZ_IBUF_BUFG |                            | tdm/divider/clk_out           |                4 |             16 |
+|  CLK100MHZ_IBUF_BUFG | DD/r_Binary_0              |                               |                3 |             16 |
+|  CLK100MHZ_IBUF_BUFG | debLeft/BTNL_deb           | debCPU/CPU_reset              |                6 |             16 |
+|  CLK100MHZ_IBUF_BUFG | debRight/BTNR_deb          | debCPU/CPU_reset              |                4 |             16 |
+|  CLK100MHZ_IBUF_BUFG | debUP/BTNU_deb             | debCPU/CPU_reset              |                4 |             16 |
+|  CLK100MHZ_IBUF_BUFG |                            | debCPU/PB_cnt[0]_i_1_n_0      |                5 |             17 |
+|  CLK100MHZ_IBUF_BUFG |                            | debLeft/PB_cnt[0]_i_1__1_n_0  |                5 |             17 |
+|  CLK100MHZ_IBUF_BUFG |                            | debCenter/PB_IDLE             |                5 |             17 |
+|  CLK100MHZ_IBUF_BUFG |                            | debRight/PB_cnt[0]_i_1__2_n_0 |                5 |             17 |
+|  CLK100MHZ_IBUF_BUFG |                            | debUP/PB_cnt[0]_i_1__3_n_0    |                5 |             17 |
+|  CLK100MHZ_IBUF_BUFG |                            |                               |               12 |             20 |
++----------------------+----------------------------+-------------------------------+------------------+----------------+
+
+

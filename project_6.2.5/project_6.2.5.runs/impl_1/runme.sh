@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/impl_1'
+HD_PWD='C:/Users/na-tt/Documents/ELO212/project_6.2.5/project_6.2.5.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log debug_display_calc_FSM.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source debug_display_calc_FSM.tcl -notrace
+EAStep vivado -log diplay_basic_calc_FSM.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source diplay_basic_calc_FSM.tcl -notrace
 
 

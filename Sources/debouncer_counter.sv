@@ -1,6 +1,6 @@
 module PB_Debouncer_counter#(
-    parameter DELAY=15,                     // Number of clock pulses to check stable button pressing
-    parameter DELAY_WIDTH = $clog2(DELAY)   // Determine the size of the clock cycles counter
+    parameter DELAY=15                     // Number of clock pulses to check stable button pressing
+    //parameter DELAY_WIDTH = $clog2(DELAY)   // Determine the size of the clock cycles counter
     )
 (
 	input 	logic clk,                  // base clock
@@ -11,7 +11,7 @@ module PB_Debouncer_counter#(
 	output  logic PB_released_pulse    // clean and synchronized pulse for button released
  );
 	
-	
+	localparam DELAY_WIDTH = $clog2(DELAY);
 	logic PB_sync_aux, PB_sync;
 
 // Double flopping stage for synchronizing async. PB input signal

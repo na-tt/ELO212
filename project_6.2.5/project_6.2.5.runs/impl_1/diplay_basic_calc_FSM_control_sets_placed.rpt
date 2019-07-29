@@ -1,0 +1,76 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Jul 26 14:30:10 2019
+| Host         : Jaime-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file diplay_basic_calc_FSM_control_sets_placed.rpt
+| Design       : diplay_basic_calc_FSM
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     9 |
+| Unused register locations in slices containing registers |    27 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      3 |            1 |
+|      4 |            2 |
+|      8 |            1 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              11 |            7 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              54 |           15 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              36 |           13 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+---------------+---------------------+------------------+----------------+
+|     Clock Signal     | Enable Signal |   Set/Reset Signal  | Slice Load Count | Bel Load Count |
++----------------------+---------------+---------------------+------------------+----------------+
+|  tdm/divider/clk     |               |                     |                1 |              3 |
+|  CLK100MHZ_IBUF_BUFG |               | debCPU/CPU_reset    |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | FSM/Q[2]      | debCPU/CPU_reset    |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG |               |                     |                6 |              8 |
+|  CLK100MHZ_IBUF_BUFG |               | tdm/divider/clk_out |                4 |             16 |
+|  CLK100MHZ_IBUF_BUFG | FSM/Q[0]      | debCPU/CPU_reset    |                6 |             16 |
+|  CLK100MHZ_IBUF_BUFG | FSM/Q[1]      | debCPU/CPU_reset    |                6 |             16 |
+|  CLK100MHZ_IBUF_BUFG |               | debCenter/PB_IDLE   |                5 |             17 |
+|  CLK100MHZ_IBUF_BUFG |               | debCPU/PB_IDLE      |                5 |             17 |
++----------------------+---------------+---------------------+------------------+----------------+
+
+

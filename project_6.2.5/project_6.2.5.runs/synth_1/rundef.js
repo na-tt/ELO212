@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log debug_display_calc_FSM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source debug_display_calc_FSM.tcl" );
+         "-log diplay_basic_calc_FSM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source diplay_basic_calc_FSM.tcl" );
 
 
 

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Natt/Documents/GitHub/ELO212/project_6.2.5/project_6.2.5.runs/synth_1'
+HD_PWD='C:/Users/na-tt/Documents/ELO212/project_6.2.5/project_6.2.5.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log debug_display_calc_FSM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source debug_display_calc_FSM.tcl
+EAStep vivado -log diplay_basic_calc_FSM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source diplay_basic_calc_FSM.tcl

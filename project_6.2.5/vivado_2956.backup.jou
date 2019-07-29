@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 26 14:23:21 2019
+# Process ID: 2956
+# Current directory: C:/Users/na-tt/Documents/ELO212/project_6.2.5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3760 C:\Users\na-tt\Documents\ELO212\project_6.2.5\project_6.2.5.xpr
+# Log file: C:/Users/na-tt/Documents/ELO212/project_6.2.5/vivado.log
+# Journal file: C:/Users/na-tt/Documents/ELO212/project_6.2.5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/na-tt/Documents/ELO212/project_6.2.5/project_6.2.5.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top diplay_basic_calc_FSM [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/na-tt/Documents/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/diplay_basic_calc_FSM.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/na-tt/Documents/ELO212/project_6.2.5/project_6.2.5.runs/impl_1/diplay_basic_calc_FSM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+close_project
+open_project C:/Users/na-tt/Documents/ELO212/project_6.2.2/project_6.2.2.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/na-tt/Documents/ELO212/project_6.2.2/project_6.2.2.runs/impl_1/display_reg.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/na-tt/Documents/ELO212/project_6.2.2/project_6.2.2.runs/impl_1/display_reg.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+close_project
+open_project C:/Users/na-tt/Documents/ELO212/project_6.2.3/project_6.2.3.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/na-tt/Documents/ELO212/project_6.2.3/project_6.2.3.runs/impl_1/display_retentor.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/na-tt/Documents/ELO212/project_6.2.3/project_6.2.3.runs/impl_1/display_retentor.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+close_project
+open_project C:/Users/na-tt/Documents/ELO212/project_6.2.4/project_6.2.4.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/na-tt/Documents/ELO212/project_6.2.4/project_6.2.4.runs/impl_1/display_ALU16.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/na-tt/Documents/ELO212/project_6.2.4/project_6.2.4.runs/impl_1/display_ALU16.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

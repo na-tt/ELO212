@@ -7,7 +7,7 @@ module diplay_basic_calc_FSM(
     );
     assign DP = ~0;
     logic CPU_reset,BTNC_pressed;
-    PB_Debouncer_counter #(100000) debCPU(.clk(CLK100MHZ),.rst(0),.PB(CPU_RESETN),.PB_pressed_status(CPU_reset),.PB_pressed_pulse(),.PB_released_pulse());
+    PB_Debouncer_counter #(100000) debCPU(.clk(CLK100MHZ),.rst(0),.PB(~CPU_RESETN),.PB_pressed_status(CPU_reset),.PB_pressed_pulse(),.PB_released_pulse());
     PB_Debouncer_counter #(100000) debCenter(.clk(CLK100MHZ),.rst(0),.PB(BTNC),.PB_pressed_status(),.PB_pressed_pulse(BTNC_pressed),.PB_released_pulse());
     // at 100MHZ 100000 cicles (actually 2^17 = 131072) gives 1ms (actually 1.31ms) of input lag 
     

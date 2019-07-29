@@ -1,0 +1,426 @@
+
+*** Running vivado
+    with args -log test_display_double_dabble.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_display_double_dabble.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source test_display_double_dabble.tcl -notrace
+Command: synth_design -top test_display_double_dabble -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5488 
+WARNING: [Synth 8-2507] parameter declaration becomes local in Binary_to_BCD with formal parameter declaration list [C:/Users/na-tt/Documents/ELO212/project_6_extended.2.2/project_6_extended.2.2.srcs/sources_1/new/Binary_to_BCD.sv:15]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Binary_to_BCD with formal parameter declaration list [C:/Users/na-tt/Documents/ELO212/project_6_extended.2.2/project_6_extended.2.2.srcs/sources_1/new/Binary_to_BCD.sv:16]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Binary_to_BCD with formal parameter declaration list [C:/Users/na-tt/Documents/ELO212/project_6_extended.2.2/project_6_extended.2.2.srcs/sources_1/new/Binary_to_BCD.sv:17]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Binary_to_BCD with formal parameter declaration list [C:/Users/na-tt/Documents/ELO212/project_6_extended.2.2/project_6_extended.2.2.srcs/sources_1/new/Binary_to_BCD.sv:18]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Binary_to_BCD with formal parameter declaration list [C:/Users/na-tt/Documents/ELO212/project_6_extended.2.2/project_6_extended.2.2.srcs/sources_1/new/Binary_to_BCD.sv:19]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Binary_to_BCD with formal parameter declaration list [C:/Users/na-tt/Documents/ELO212/project_6_extended.2.2/project_6_extended.2.2.srcs/sources_1/new/Binary_to_BCD.sv:20]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 369.473 ; gain = 110.445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'test_display_double_dabble' [C:/Users/na-tt/Documents/ELO212/project_6_extended.2.2/project_6_extended.2.2.srcs/sources_1/new/test_display_double_dabble.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'PB_Debouncer_counter' [C:/Users/na-tt/Documents/ELO212/Sources/debouncer_counter.sv:1]
+	Parameter DELAY bound to: 100000 - type: integer 
+	Parameter DELAY_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PB_Debouncer_counter' (1#1) [C:/Users/na-tt/Documents/ELO212/Sources/debouncer_counter.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'n_retentor2' [C:/Users/na-tt/Documents/ELO212/Sources/n_retentor2.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'reg_bank' [C:/Users/na-tt/Documents/ELO212/Sources/reg_bank.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank' (2#1) [C:/Users/na-tt/Documents/ELO212/Sources/reg_bank.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'n_retentor2' (3#1) [C:/Users/na-tt/Documents/ELO212/Sources/n_retentor2.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/na-tt/Documents/ELO212/Sources/ALU.sv:3]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (4#1) [C:/Users/na-tt/Documents/ELO212/Sources/ALU.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Binary_to_BCD' [C:/Users/na-tt/Documents/ELO212/project_6_extended.2.2/project_6_extended.2.2.srcs/sources_1/new/Binary_to_BCD.sv:3]
+	Parameter INPUT_WIDTH bound to: 16 - type: integer 
+	Parameter DECIMAL_DIGITS bound to: 5 - type: integer 
+	Parameter s_IDLE bound to: 3'b000 
+	Parameter s_SHIFT bound to: 3'b001 
+	Parameter s_CHECK_SHIFT_INDEX bound to: 3'b010 
+	Parameter s_ADD bound to: 3'b011 
+	Parameter s_CHECK_DIGIT_INDEX bound to: 3'b100 
+	Parameter s_BCD_DONE bound to: 3'b101 
+INFO: [Synth 8-6155] done synthesizing module 'Binary_to_BCD' (5#1) [C:/Users/na-tt/Documents/ELO212/project_6_extended.2.2/project_6_extended.2.2.srcs/sources_1/new/Binary_to_BCD.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'BCD_to_sevenSeg' [C:/Users/na-tt/Documents/ELO212/Sources/BCD_to_7seg.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/na-tt/Documents/ELO212/Sources/BCD_to_7seg.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'BCD_to_sevenSeg' (6#1) [C:/Users/na-tt/Documents/ELO212/Sources/BCD_to_7seg.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'TDM' [C:/Users/na-tt/Documents/ELO212/Sources/TDM.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/na-tt/Documents/ELO212/Sources/clock_divider.sv:3]
+	Parameter COUNTER_MAX bound to: 100000 - type: integer 
+	Parameter DELAY_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (7#1) [C:/Users/na-tt/Documents/ELO212/Sources/clock_divider.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'nbit_counter' [C:/Users/na-tt/Documents/ELO212/Sources/nbit_counter.sv:3]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'nbit_counter' (8#1) [C:/Users/na-tt/Documents/ELO212/Sources/nbit_counter.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'digit_selector' [C:/Users/na-tt/Documents/ELO212/Sources/digit_selector.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/na-tt/Documents/ELO212/Sources/digit_selector.sv:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/na-tt/Documents/ELO212/Sources/digit_selector.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'digit_selector' (9#1) [C:/Users/na-tt/Documents/ELO212/Sources/digit_selector.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'TDM' (10#1) [C:/Users/na-tt/Documents/ELO212/Sources/TDM.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'test_display_double_dabble' (11#1) [C:/Users/na-tt/Documents/ELO212/project_6_extended.2.2/project_6_extended.2.2.srcs/sources_1/new/test_display_double_dabble.sv:3]
+WARNING: [Synth 8-3917] design test_display_double_dabble has port DP driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 401.500 ; gain = 142.473
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 401.500 ; gain = 142.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 401.500 ; gain = 142.473
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/na-tt/Documents/ELO212/project_6_extended.2.2/project_6_extended.2.2.srcs/constrs_1/new/constrs.6_extended.2.2.xdc]
+Finished Parsing XDC File [C:/Users/na-tt/Documents/ELO212/project_6_extended.2.2/project_6_extended.2.2.srcs/constrs_1/new/constrs.6_extended.2.2.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/na-tt/Documents/ELO212/project_6_extended.2.2/project_6_extended.2.2.srcs/constrs_1/new/constrs.6_extended.2.2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_display_double_dabble_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_display_double_dabble_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 760.676 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 760.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 760.676 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 760.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 760.676 ; gain = 501.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 760.676 ; gain = 501.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 760.676 ; gain = 501.648
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "status" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "r_SM_Main" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_SM_Main" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'Binary_to_BCD'
+INFO: [Synth 8-5546] ROM "clk_out" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 760.676 ; gain = 501.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   7 Input     20 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PB_Debouncer_counter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module reg_bank 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+Module Binary_to_BCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   7 Input     20 Bit        Muxes := 2     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module nbit_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module digit_selector 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'DD/r_Digit_Index_reg[4:0]' into 'DD/r_Digit_Index_reg[4:0]' [C:/Users/na-tt/Documents/ELO212/project_6_extended.2.2/project_6_extended.2.2.srcs/sources_1/new/Binary_to_BCD.sv:95]
+INFO: [Synth 8-5546] ROM "DD/r_SM_Main" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tdm/divider/clk_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design test_display_double_dabble has port DP driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 760.676 ; gain = 501.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 760.676 ; gain = 501.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 787.387 ; gain = 528.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 791.199 ; gain = 532.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 791.199 ; gain = 532.172
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 791.199 ; gain = 532.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 791.199 ; gain = 532.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 791.199 ; gain = 532.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 791.199 ; gain = 532.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 791.199 ; gain = 532.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    33|
+|3     |LUT1   |     9|
+|4     |LUT2   |    49|
+|5     |LUT3   |    36|
+|6     |LUT4   |    14|
+|7     |LUT5   |    27|
+|8     |LUT6   |   107|
+|9     |FDRE   |   217|
+|10    |IBUF   |    22|
+|11    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+-----------------------+------+
+|      |Instance    |Module                 |Cells |
++------+------------+-----------------------+------+
+|1     |top         |                       |   531|
+|2     |  ALU16     |ALU                    |    20|
+|3     |  DD        |Binary_to_BCD          |   195|
+|4     |  bank      |reg_bank               |    17|
+|5     |  debCPU    |PB_Debouncer_counter   |    33|
+|6     |  debCenter |PB_Debouncer_counter_0 |    44|
+|7     |  debLeft   |PB_Debouncer_counter_1 |    32|
+|8     |  debRight  |PB_Debouncer_counter_2 |    32|
+|9     |  debUP     |PB_Debouncer_counter_3 |    32|
+|10    |  retentor  |n_retentor2            |    32|
+|11    |    bank1   |reg_bank_4             |    16|
+|12    |    bank2   |reg_bank_5             |    16|
+|13    |  tdm       |TDM                    |    55|
+|14    |    counter |nbit_counter           |    25|
+|15    |    divider |clock_divider          |    30|
++------+------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 791.199 ; gain = 532.172
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 791.199 ; gain = 172.996
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 791.199 ; gain = 532.172
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 791.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 791.199 ; gain = 544.410
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 791.199 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/na-tt/Documents/ELO212/project_6_extended.2.2/project_6_extended.2.2.runs/synth_1/test_display_double_dabble.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file test_display_double_dabble_utilization_synth.rpt -pb test_display_double_dabble_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 28 16:55:55 2019...
