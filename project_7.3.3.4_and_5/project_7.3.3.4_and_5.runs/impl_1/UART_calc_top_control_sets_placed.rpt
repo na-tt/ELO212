@@ -1,0 +1,89 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Aug 11 11:01:31 2019
+| Host         : DESKTOP-BUGDRN4 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file UART_calc_top_control_sets_placed.rpt
+| Design       : UART_calc_top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    21 |
+| Unused register locations in slices containing registers |    42 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      3 |            1 |
+|      4 |            5 |
+|      5 |            1 |
+|      8 |            7 |
+|    16+ |            7 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              52 |           16 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              97 |           26 |
+| Yes          | No                    | No                     |              37 |           11 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              76 |           30 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------+-----------------------------------------------------+------------------------------------------------+------------------+----------------+
+|             Clock Signal            |                    Enable Signal                    |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-------------------------------------+-----------------------------------------------------+------------------------------------------------+------------------+----------------+
+|  display_controller/tdm/divider/clk |                                                     |                                                |                1 |              3 |
+|  clk_100M_IBUF_BUFG                 | display_controller/DDr/r_BCD[11]                    | display_controller/DDr/r_BCD[11]_i_1_n_0       |                2 |              4 |
+|  clk_100M_IBUF_BUFG                 | display_controller/DDr/r_BCD[3]                     | display_controller/DDr/r_BCD[3]_i_1_n_0        |                3 |              4 |
+|  clk_100M_IBUF_BUFG                 | display_controller/DDr/r_BCD[7]                     | display_controller/DDr/r_BCD[7]_i_1_n_0        |                1 |              4 |
+|  clk_100M_IBUF_BUFG                 | display_controller/DDr/r_BCD[15]                    | display_controller/DDr/r_BCD[15]_i_1_n_0       |                2 |              4 |
+|  clk_100M_IBUF_BUFG                 | display_controller/DDr/r_BCD[19]                    | display_controller/DDr/r_BCD[19]_i_1_n_0       |                1 |              4 |
+|  clk_100M_IBUF_BUFG                 | display_controller/DDr/r_Digit_Index                |                                                |                2 |              5 |
+|  clk_100M_IBUF_BUFG                 | uart_basic_inst0/uart_rx_blk/rx_data[7]_i_1_n_0     | reset                                          |                3 |              8 |
+|  clk_100M_IBUF_BUFG                 | TX_control_inst0/E[0]                               | reset                                          |                3 |              8 |
+|  clk_100M_IBUF_BUFG                 | display_controller/DDr/r_Loop_Count[7]_i_2_n_0      | display_controller/DDr/r_Loop_Count[7]_i_1_n_0 |                5 |              8 |
+|  clk_100M_IBUF_BUFG                 | UART_RX_CTRL_MOD_inst0/FSM_onehot_state_reg_n_0_[3] | reset                                          |                3 |              8 |
+|  clk_100M_IBUF_BUFG                 | UART_RX_CTRL_MOD_inst0/FSM_onehot_state_reg_n_0_[7] | reset                                          |                3 |              8 |
+|  clk_100M_IBUF_BUFG                 | UART_RX_CTRL_MOD_inst0/FSM_onehot_state_reg_n_0_[1] | reset                                          |                2 |              8 |
+|  clk_100M_IBUF_BUFG                 | UART_RX_CTRL_MOD_inst0/FSM_onehot_state_reg_n_0_[5] | reset                                          |                2 |              8 |
+|  clk_100M_IBUF_BUFG                 |                                                     | display_controller/tdm/divider/clk_out         |                4 |             16 |
+|  clk_100M_IBUF_BUFG                 | TX_control_inst0/tx_data16_0                        |                                                |                5 |             16 |
+|  clk_100M_IBUF_BUFG                 | display_controller/DDr/r_Binary_0                   |                                                |                4 |             16 |
+|  clk_100M_IBUF_BUFG                 |                                                     | uart_basic_inst0/uart_tx_blk/SR[0]             |                5 |             19 |
+|  clk_100M_IBUF_BUFG                 |                                                     | reset                                          |                9 |             30 |
+|  clk_100M_IBUF_BUFG                 |                                                     | TX_control_inst0/hold_state_timer[0]_i_1_n_0   |                8 |             32 |
+|  clk_100M_IBUF_BUFG                 |                                                     |                                                |               15 |             49 |
++-------------------------------------+-----------------------------------------------------+------------------------------------------------+------------------+----------------+
+
+
