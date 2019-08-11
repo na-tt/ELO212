@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug 10 16:06:14 2019
+# Process ID: 8288
+# Current directory: C:/Users/Natt/Documents/GitHub/ELO212/project_7.3.3.2/project_7.3.3.2.runs/synth_1
+# Command line: vivado.exe -log test_RX_CTRL_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_RX_CTRL_top.tcl
+# Log file: C:/Users/Natt/Documents/GitHub/ELO212/project_7.3.3.2/project_7.3.3.2.runs/synth_1/test_RX_CTRL_top.vds
+# Journal file: C:/Users/Natt/Documents/GitHub/ELO212/project_7.3.3.2/project_7.3.3.2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source test_RX_CTRL_top.tcl -notrace

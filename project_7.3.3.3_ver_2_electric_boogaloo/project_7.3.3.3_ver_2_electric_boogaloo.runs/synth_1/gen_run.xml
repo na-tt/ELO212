@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1565494601">
+  <File Type="PA-TCL" Name="UART_calc_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="UART_calc_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="UART_calc_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="UART_calc_top.vds"/>
+  <File Type="RDS-UTIL" Name="UART_calc_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="UART_calc_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="UART_calc_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="UART_calc_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="UART_calc_top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/uart/data_sync.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_7.3.3.2/project_7.3.3.2.srcs/sources_1/imports/uart/data_sync.v"/>
+        <Attr Name="ImportTime" Val="1563499054"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uart/uart_basic.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_7.3.3.2/project_7.3.3.2.srcs/sources_1/imports/uart/uart_basic.v"/>
+        <Attr Name="ImportTime" Val="1563499054"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uart/uart_baud_tick_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_7.3.3.2/project_7.3.3.2.srcs/sources_1/imports/uart/uart_baud_tick_gen.v"/>
+        <Attr Name="ImportTime" Val="1563499054"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uart/uart_rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_7.3.3.2/project_7.3.3.2.srcs/sources_1/imports/uart/uart_rx.v"/>
+        <Attr Name="ImportTime" Val="1563499054"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uart/uart_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_7.3.3.2/project_7.3.3.2.srcs/sources_1/imports/uart/uart_tx.v"/>
+        <Attr Name="ImportTime" Val="1563499054"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/ALU.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sources/ALU.sv"/>
+        <Attr Name="ImportTime" Val="1557960118"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ALU_display_controller.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/BCD_to_7seg.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sources/BCD_to_7seg.sv"/>
+        <Attr Name="ImportTime" Val="1557610173"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/Binary_to_BCD.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sources/Binary_to_BCD.sv"/>
+        <Attr Name="ImportTime" Val="1564263375"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/TDM.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sources/TDM.sv"/>
+        <Attr Name="ImportTime" Val="1557926767"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/UART_RX_CTRL_MOD.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/clock_divider.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sources/clock_divider.sv"/>
+        <Attr Name="ImportTime" Val="1557610178"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/digit_selector.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sources/digit_selector.sv"/>
+        <Attr Name="ImportTime" Val="1557611458"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/nbit_counter.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sources/nbit_counter.sv"/>
+        <Attr Name="ImportTime" Val="1557610178"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/UART_calc_top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="UART_calc_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constrs/UART_master_const.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_7.3.3.2/project_7.3.3.2.srcs/constrs_1/imports/constrs/UART_master_const.xdc"/>
+        <Attr Name="ImportTime" Val="1565461593"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
